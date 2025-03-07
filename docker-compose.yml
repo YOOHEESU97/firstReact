@@ -1,0 +1,8 @@
+version: "3"
+services:
+  app:
+    build: .
+    ports:
+      - "3000:80" # 호스트 3000 → 컨테이너 80
+    container_name: vite_app
+# docker-compose up --build
